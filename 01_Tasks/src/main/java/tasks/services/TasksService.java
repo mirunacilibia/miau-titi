@@ -5,12 +5,15 @@ import javafx.collections.ObservableList;
 import tasks.model.ArrayTaskList;
 import tasks.model.Task;
 import tasks.model.TasksOperations;
+import tasks.model.Validator;
 
 import java.util.Date;
+import java.util.Objects;
 
 public class TasksService {
 
     private ArrayTaskList tasks;
+    private Validator validator;
 
     public TasksService(ArrayTaskList tasks){
         this.tasks = tasks;
@@ -50,5 +53,9 @@ public class TasksService {
         //Iterable<Task> filtered = tasks.incoming(start, end);
 
         return filtered;
+    }
+
+    public Boolean checkData(String startDate, String endDate, String hourStartDate, String hourEndDate ) {
+       return validator.checkData(startDate,endDate,hourStartDate,hourEndDate);
     }
 }

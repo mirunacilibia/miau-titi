@@ -37,9 +37,9 @@ public class TaskIO {
                     dataOutputStream.writeLong(t.getTime().getTime());
                 }
             }
-        }
-        finally {
             dataOutputStream.close();
+        } catch (IOException e) {
+            log.error("IO exception writing file");
         }
     }
     public static void read(TaskList tasks, InputStream in)throws IOException {
@@ -73,12 +73,10 @@ public class TaskIO {
         try {
             fos = new FileOutputStream(file);
             write(tasks,fos);
+            fos.close();
         }
         catch (IOException e){
             log.error("IO exception reading or writing file");
-        }
-        finally {
-            fos.close();
         }
     }
 
@@ -87,12 +85,10 @@ public class TaskIO {
         try {
             fis = new FileInputStream(file);
             read(tasks, fis);
+            fis.close();
         }
         catch (IOException e){
             log.error("IO exception reading or writing file");
-        }
-        finally {
-            fis.close();
         }
     }
     public static void write(TaskList tasks, Writer out) throws IOException {
@@ -122,12 +118,10 @@ public class TaskIO {
         FileWriter fileWriter = new FileWriter(file);
         try {
             write(tasks, fileWriter);
+            fileWriter.close();
         }
         catch (IOException e ){
             log.error("IO exception reading or writing file");
-        }
-        finally {
-            fileWriter.close();
         }
 
     }
