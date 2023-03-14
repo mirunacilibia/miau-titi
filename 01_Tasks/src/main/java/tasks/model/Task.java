@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Task implements Serializable, Cloneable {
+public class Task implements Serializable {
     private String title;
     private Date time;
     private Date start;
@@ -96,7 +96,7 @@ public class Task implements Serializable, Cloneable {
 
     }
     public Date nextTimeAfter(Date current){
-        if (current.after(end) || current.equals(end))return null;
+        if (current.after(end) || current.equals(end)) return null;
         if (isRepeated() && isActive()){
             Date timeBefore  = start;
             Date timeAfter = start;
@@ -171,13 +171,11 @@ public class Task implements Serializable, Cloneable {
                 ", active=" + active +
                 '}';
     }
-    @Override
-    protected Task clone() throws CloneNotSupportedException {
-        Task task  = (Task)super.clone();
-        task.time = (Date)this.time.clone();
-        task.start = (Date)this.start.clone();
-        task.end = (Date)this.end.clone();
-        return task;
+
+    Task(Task task) {
+        time = task.time;
+        start = task.start;
+        end = task.end;
     }
 }
 

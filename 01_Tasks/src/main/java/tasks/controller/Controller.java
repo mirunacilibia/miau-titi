@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Objects;
 
 public class Controller {
     private static final Logger log = Logger.getLogger(Controller.class.getName());
@@ -82,9 +83,13 @@ public class Controller {
 
     @FXML
     public void showTaskDialog(ActionEvent actionEvent){
+        Task selectedItem = (Task) mainTable.getSelectionModel().getSelectedItem();
+
         Object source = actionEvent.getSource();
         NewEditController.setClickedButton((Button) source);
-
+        if(Objects.equals(((Button) source).getId(), "btnEdit") && selectedItem == null) {
+            return;
+        }
         try {
             editNewStage = new Stage();
             NewEditController.setCurrentStage(editNewStage);
@@ -93,7 +98,7 @@ public class Controller {
             NewEditController editCtrl = loader.getController();
             editCtrl.setService(service);
             editCtrl.setTasksList(tasksList);
-            editCtrl.setCurrentTask((Task)mainTable.getSelectionModel().getSelectedItem());
+            editCtrl.setCurrentTask(selectedItem);
             editNewStage.setScene(new Scene(root, 600, 350));
             editNewStage.setResizable(false);
             editNewStage.initOwner(Main.primaryStage);
@@ -129,6 +134,11 @@ public class Controller {
     }
     @FXML
     public void showFilteredTasks(){
+
+        if (service.checkData(datePickerFrom.getValue().toString(), datePickerTo.getValue().toString(), fieldTimeFrom.getText(),fieldTimeTo.getText())){
+            return;
+        }
+
         Date start = getDateFromFilterField(datePickerFrom.getValue(), fieldTimeFrom.getText());
         Date end = getDateFromFilterField(datePickerTo.getValue(), fieldTimeTo.getText());
 

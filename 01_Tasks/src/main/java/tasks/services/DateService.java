@@ -22,6 +22,10 @@ public class DateService {
 
     }
     public Date getDateValueFromLocalDate(LocalDate localDate){//for getting from DatePicker
+        if (localDate == null) {
+            System.out.println("No date selected!!");
+            return null;
+        }
         Instant instant = Instant.from(localDate.atStartOfDay(ZoneId.systemDefault()));
         return Date.from(instant);
     }
