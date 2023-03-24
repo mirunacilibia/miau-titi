@@ -53,14 +53,8 @@ public class TaskIO {
                 int interval = dataInputStream.readInt();
                 Date startTime = new Date(dataInputStream.readLong());
                 Task taskToAdd;
-                if (interval > 0){
                     Date endTime = new Date(dataInputStream.readLong());
-                    taskToAdd = new Task(title, startTime, endTime, interval);
-                }
-                else {
-                    taskToAdd = new Task(title, startTime);
-                }
-                taskToAdd.setActive(isActive);
+                    taskToAdd = new Task(title, startTime, endTime, interval, isActive);
                 tasks.add(taskToAdd);
             }
         }
@@ -141,17 +135,12 @@ public class TaskIO {
         //Task(String title, Date time)   Task(String title, Date start, Date end, int interval)
         Task result;
         String title = getTitleFromText(line);
-        if (isRepeated){
+
             Date startTime = getDateFromText(line, true);
             Date endTime = getDateFromText(line, false);
             int interval = getIntervalFromText(line);
-            result = new Task(title, startTime, endTime, interval);
-        }
-        else {
-            Date startTime = getDateFromText(line, true);
-            result = new Task(title, startTime);
-        }
-        result.setActive(isActive);
+            result = new Task(title, startTime, endTime, interval, isActive);
+
         return result;
     }
     //

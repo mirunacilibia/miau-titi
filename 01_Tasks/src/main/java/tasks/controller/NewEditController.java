@@ -100,6 +100,9 @@ public class NewEditController {
         currentStage.setTitle(title);
         datePickerStart.setValue(LocalDate.now());
         txtFieldTimeStart.setText(DEFAULT_START_TIME);
+        datePickerEnd.setValue(LocalDate.now());
+        txtFieldTimeEnd.setText(DEFAULT_END_TIME);
+        fieldInterval.setText(DEFAULT_INTERVAL_TIME);
     }
 
     private void initEditWindow(String title){
@@ -107,37 +110,28 @@ public class NewEditController {
         fieldTitle.setText(currentTask.getTitle());
         datePickerStart.setValue(dateService.getLocalDateValueFromDate(currentTask.getStartTime()));
         txtFieldTimeStart.setText(dateService.getTimeOfTheDayFromDate(currentTask.getStartTime()));
+        datePickerEnd.setValue(dateService.getLocalDateValueFromDate(currentTask.getEndTime()));
+        txtFieldTimeEnd.setText(dateService.getTimeOfTheDayFromDate(currentTask.getEndTime()));
+        fieldInterval.setText(DEFAULT_INTERVAL_TIME);
 
         if (currentTask.isRepeated()){
             checkBoxRepeated.setSelected(true);
-            hideRepeatedTaskModule(false);
-            datePickerEnd.setValue(dateService.getLocalDateValueFromDate(currentTask.getEndTime()));
+            fieldInterval.setDisable(false);
             fieldInterval.setText(service.getIntervalInHours(currentTask));
-            txtFieldTimeEnd.setText(dateService.getTimeOfTheDayFromDate(currentTask.getEndTime()));
         }
         if (currentTask.isActive()){
             checkBoxActive.setSelected(true);
-
         }
     }
     @FXML
     public void switchRepeatedCheckbox(ActionEvent actionEvent){
         CheckBox source = (CheckBox)actionEvent.getSource();
         if (source.isSelected()){
-            hideRepeatedTaskModule(false);
+            fieldInterval.setDisable(false);
         }
         else if (!source.isSelected()){
-            hideRepeatedTaskModule(true);
+            fieldInterval.setDisable(true);
         }
-    }
-    private void hideRepeatedTaskModule(boolean toShow){
-        datePickerEnd.setDisable(toShow);
-        fieldInterval.setDisable(toShow);
-        txtFieldTimeEnd.setDisable(toShow);
-
-        datePickerEnd.setValue(LocalDate.now());
-        txtFieldTimeEnd.setText(DEFAULT_END_TIME);
-        fieldInterval.setText(DEFAULT_INTERVAL_TIME);
     }
 
     @FXML
@@ -192,18 +186,15 @@ public class NewEditController {
         String newTitle = fieldTitle.getText();
         Date startDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerStart.getValue());//ONLY date!!without time
         Date newStartDate = dateService.getDateMergedWithTime(txtFieldTimeStart.getText(), startDateWithNoTime);
-        if (checkBoxRepeated.isSelected()){
-            Date endDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerEnd.getValue());
-            Date newEndDate = dateService.getDateMergedWithTime(txtFieldTimeEnd.getText(), endDateWithNoTime);
-            int newInterval = service.parseFromStringToSeconds(fieldInterval.getText());
-            if (newStartDate.after(newEndDate)) throw new IllegalArgumentException("Start date should be before end");
-            result = new Task(newTitle, newStartDate,newEndDate, newInterval);
+        Date endDateWithNoTime = dateService.getDateValueFromLocalDate(datePickerEnd.getValue());
+        Date newEndDate = dateService.getDateMergedWithTime(txtFieldTimeEnd.getText(), endDateWithNoTime);
+        boolean newActive = checkBoxActive.isSelected();
+        int newInterval = 0;
+        if (checkBoxRepeated.isSelected()) {
+            newInterval = service.parseFromStringToSeconds(fieldInterval.getText());
         }
-        else {
-            result = new Task(newTitle, newStartDate);
-        }
-        boolean isActive = checkBoxActive.isSelected();
-        result.setActive(isActive);
+        if (newStartDate.after(newEndDate)) throw new IllegalArgumentException("Start date should be before end");
+        result = new Task(newTitle, newStartDate, newEndDate, newInterval, newActive);
         System.out.println(result);
         return result;
     }

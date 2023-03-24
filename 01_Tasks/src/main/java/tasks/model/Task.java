@@ -21,30 +21,26 @@ public class Task implements Serializable {
     public static SimpleDateFormat getDateFormat(){
         return sdf;
     }
-    public Task(String title, Date time){
-        if (time.getTime() < 0) {
-            log.error("time below bound");
-            throw new IllegalArgumentException("Time cannot be negative");
+
+    public Task(String title, Date start, Date end, int interval, boolean active){
+        if (title.length() <= 0 || title.length() > 255) {
+            log.error("title invalid");
+            throw new IllegalArgumentException("title invalid");
         }
-        this.title = title;
-        this.time = time;
-        this.start = time;
-        this.end = time;
-    }
-    public Task(String title, Date start, Date end, int interval){
         if (start.getTime() < 0 || end.getTime() < 0) {
             log.error("time below bound");
             throw new IllegalArgumentException("Time cannot be negative");
         }
-        if (interval < 1) {
-            log.error("interval < than 1");
-            throw new IllegalArgumentException("interval should me > 1");
+        if (interval < 0) {
+            log.error("interval < than 0");
+            throw new IllegalArgumentException("interval should be > 0");
         }
         this.title = title;
         this.start = start;
         this.end = end;
         this.interval = interval;
         this.time = start;
+        this.active = active;
     }
 
     public String getTitle() {
