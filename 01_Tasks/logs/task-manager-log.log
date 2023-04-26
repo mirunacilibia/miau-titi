@@ -180,3 +180,42 @@
 2023-04-26 12:31:00 INFO  TasksOperations:19 - Tue May 10 00:00:00 EEST 2022
 2023-04-26 12:31:00 INFO  TasksOperations:20 - Fri Jun 10 00:00:00 EEST 2022
 2023-04-26 12:31:00 INFO  TasksOperations:26 - title
+2023-04-26 16:38:43 ERROR Task:27 - title invalid
+2023-04-26 16:38:43 ERROR Task:27 - title invalid
+2023-04-26 16:38:43 ERROR Task:35 - interval < than 0
+2023-04-26 16:38:43 ERROR Task:35 - interval < than 0
+2023-04-26 16:38:43 ERROR Task:27 - title invalid
+2023-04-26 16:38:43 ERROR Task:27 - title invalid
+2023-04-26 16:38:43 ERROR Task:27 - title invalid
+2023-04-26 16:38:43 ERROR Task:27 - title invalid
+2023-04-26 16:38:43 ERROR Task:27 - title invalid
+2023-04-26 16:38:48 INFO  TasksOperations:19 - Wed Feb 01 00:00:00 EET 2023
+2023-04-26 16:38:48 INFO  TasksOperations:20 - Thu Feb 02 00:00:00 EET 2023
+2023-04-26 16:38:48 INFO  TasksOperations:19 - Wed May 10 00:00:00 EEST 2023
+2023-04-26 16:38:48 INFO  TasksOperations:20 - Mon May 15 00:00:00 EEST 2023
+2023-04-26 16:38:48 INFO  TasksOperations:19 - Tue May 10 00:00:00 EEST 2022
+2023-04-26 16:38:48 INFO  TasksOperations:20 - Mon Jun 20 00:00:00 EEST 2022
+2023-04-26 16:38:48 INFO  TasksOperations:26 - title
+2023-04-26 16:38:48 INFO  TasksOperations:19 - Tue May 10 00:00:00 EEST 2022
+2023-04-26 16:38:48 INFO  TasksOperations:20 - Fri Jun 10 00:00:00 EEST 2022
+2023-04-26 16:38:48 INFO  TasksOperations:26 - title
+2023-04-26 16:38:58 INFO  TasksOperations:19 - Wed Feb 01 00:00:00 EET 2023
+2023-04-26 16:38:58 INFO  TasksOperations:20 - Thu Feb 02 00:00:00 EET 2023
+2023-04-26 16:38:58 INFO  TasksOperations:19 - Wed May 10 00:00:00 EEST 2023
+2023-04-26 16:38:58 INFO  TasksOperations:20 - Mon May 15 00:00:00 EEST 2023
+2023-04-26 16:38:58 INFO  TasksOperations:19 - Tue May 10 00:00:00 EEST 2022
+2023-04-26 16:38:58 INFO  TasksOperations:20 - Mon Jun 20 00:00:00 EEST 2022
+2023-04-26 16:38:58 INFO  TasksOperations:26 - title
+2023-04-26 16:38:58 INFO  TasksOperations:19 - Tue May 10 00:00:00 EEST 2022
+2023-04-26 16:38:58 INFO  TasksOperations:20 - Fri Jun 10 00:00:00 EEST 2022
+2023-04-26 16:38:58 INFO  TasksOperations:26 - title
+2023-04-26 16:39:13 INFO  TasksOperations:19 - Wed Feb 01 00:00:00 EET 2023
+2023-04-26 16:39:13 INFO  TasksOperations:20 - Thu Feb 02 00:00:00 EET 2023
+2023-04-26 16:39:13 INFO  TasksOperations:19 - Wed May 10 00:00:00 EEST 2023
+2023-04-26 16:39:13 INFO  TasksOperations:20 - Mon May 15 00:00:00 EEST 2023
+2023-04-26 16:39:13 INFO  TasksOperations:19 - Tue May 10 00:00:00 EEST 2022
+2023-04-26 16:39:13 INFO  TasksOperations:20 - Mon Jun 20 00:00:00 EEST 2022
+2023-04-26 16:39:13 INFO  TasksOperations:26 - title
+2023-04-26 16:39:13 INFO  TasksOperations:19 - Tue May 10 00:00:00 EEST 2022
+2023-04-26 16:39:13 INFO  TasksOperations:20 - Fri Jun 10 00:00:00 EEST 2022
+2023-04-26 16:39:13 INFO  TasksOperations:26 - title
