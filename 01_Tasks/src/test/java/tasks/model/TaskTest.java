@@ -3,14 +3,18 @@ package tasks.model;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
+import org.mockito.Mock;
+import org.mockito.Mockito;
 
 import java.text.ParseException;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Calendar;
 import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 class TaskTest {
 
@@ -18,6 +22,33 @@ class TaskTest {
 
     @BeforeEach
     void setUp() {
+    }
+
+    @DisplayName("Test for checking the get methods for dates")
+    @Test
+    void testGetDates(){
+        Date date = new Date();
+        Task testTask = new Task("title", date, date, 50, true);
+
+        assertEquals(date, testTask.getTime());
+        assertEquals(date, testTask.getStartTime());
+        assertEquals(date, testTask.getEndTime());
+    }
+
+
+    @DisplayName("Test for checking the strings and booleans method")
+    @Test
+    void testGetTitleBooleans(){
+        Date date = new Date();
+        Task testTask = mock(Task.class);
+        when(testTask.getTitle()).thenReturn("title");
+        when(testTask.isActive()).thenReturn(true);
+        when(testTask.isRepeated()).thenReturn(true);
+        testTask = new Task("title", date, date, 50, true);
+
+        assertEquals("title", testTask.getTitle());
+        assertTrue(testTask.isRepeated());
+        assertTrue(testTask.isActive());
     }
 
     @DisplayName("Test for checking different correct values for the title - TC1_ECP & TC3_BVA")

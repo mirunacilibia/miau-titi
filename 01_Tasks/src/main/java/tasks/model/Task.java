@@ -7,6 +7,7 @@ import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+// E - Entity
 public class Task implements Serializable {
     private String title;
     private Date time;
@@ -50,6 +51,7 @@ public class Task implements Serializable {
     public void setTitle(String title) {
         this.title = title;
     }
+
     public boolean isActive(){
         return this.active;
     }
@@ -76,6 +78,7 @@ public class Task implements Serializable {
     public Date getEndTime() {
         return end;
     }
+
     public int getRepeatInterval(){
         return interval > 0 ? interval : 0;
     }
@@ -118,9 +121,11 @@ public class Task implements Serializable {
     public String getFormattedDateStart(){
         return sdf.format(start);
     }
+
     public String getFormattedDateEnd(){
         return sdf.format(end);
     }
+
     public String getFormattedRepeated(){
         if (isRepeated()){
             String formattedInterval = TaskIO.getFormattedInterval(interval);
@@ -130,6 +135,7 @@ public class Task implements Serializable {
             return "No";
         }
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

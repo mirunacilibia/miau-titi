@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 
 import java.util.*;
 
+// R - repository
 public class ArrayTaskList extends TaskList{
 
     private Task[] tasks;
