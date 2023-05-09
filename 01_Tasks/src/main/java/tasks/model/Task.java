@@ -32,6 +32,10 @@ public class Task implements Serializable {
             log.error("time below bound");
             throw new IllegalArgumentException("Time cannot be negative");
         }
+        if (start.getTime()  > end.getTime()   ) {
+            log.error("start date > date end");
+            throw new IllegalArgumentException("start date > date end");
+        }
         if (interval < 0) {
             log.error("interval < than 0");
             throw new IllegalArgumentException("interval should be > 0");

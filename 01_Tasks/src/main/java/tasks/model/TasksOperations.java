@@ -19,6 +19,10 @@ public class TasksOperations {
     public Iterable<Task> incoming(Date start, Date end){
         log.info(start);
         log.info(end);
+        if(start.after(end)) {
+            log.error("start date > date end");
+            throw new IllegalArgumentException("start date > date end");
+        }
         ArrayList<Task> incomingTasks = new ArrayList<>();
         for (Task t : tasks) {
             Date nextTime = t.nextTimeAfter(start);

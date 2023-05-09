@@ -126,6 +126,53 @@ class TaskTest {
         }
     }
 
+    @DisplayName("Test for checking correct time value ")
+    @Test
+    void testCorrectTimeInterval() {
+        try {
+            Calendar cal = Calendar.getInstance();
+            cal.set(Calendar.HOUR_OF_DAY,0);
+            cal.set(Calendar.MINUTE,0);
+            cal.set(Calendar.SECOND,0);
+            cal.set(Calendar.MILLISECOND,0);
+
+            cal.set(2022,5,10);
+            Date dateStartTask = cal.getTime();
+            cal.set(2022,6,10);
+            Date dateEndTask = cal.getTime();
+
+            task = new Task("title", dateStartTask, dateEndTask, 50, true);
+
+            assert true;
+
+        } catch (IllegalArgumentException e){
+            assert false;
+        }
+    }
+
+    @DisplayName("Test for checking wrong time value ")
+    @Test
+    void testIncorrectTimeInterval() {
+        try {
+            Calendar cal = Calendar.getInstance();
+            cal.set(Calendar.HOUR_OF_DAY,0);
+            cal.set(Calendar.MINUTE,0);
+            cal.set(Calendar.SECOND,0);
+            cal.set(Calendar.MILLISECOND,0);
+
+            cal.set(2022,5,10);
+            Date dateStartTask = cal.getTime();
+            cal.set(2022,4,10);
+            Date dateEndTask = cal.getTime();
+
+            task = new Task("title", dateStartTask, dateEndTask, 50, true);
+
+            assert false;
+        } catch (IllegalArgumentException e){
+            assert true;
+        }
+    }
+
     @Disabled
     @Test
     void testCorrectDates() {

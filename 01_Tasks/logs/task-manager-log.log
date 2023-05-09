@@ -638,3 +638,75 @@
 2023-05-08 14:58:01 INFO  TasksOperations:20 - Sat Jan 01 00:00:00 EET 2022
 2023-05-08 14:58:01 INFO  TasksOperations:21 - Mon Jan 31 00:00:00 EET 2022
 2023-05-08 14:58:01 INFO  TasksOperations:27 - title
+2023-05-09 11:37:50 ERROR Task:28 - title invalid
+2023-05-09 11:37:51 ERROR Task:28 - title invalid
+2023-05-09 11:37:51 ERROR Task:36 - interval < than 0
+2023-05-09 11:37:51 ERROR Task:36 - interval < than 0
+2023-05-09 11:37:51 ERROR Task:28 - title invalid
+2023-05-09 11:37:51 ERROR Task:28 - title invalid
+2023-05-09 11:37:51 ERROR Task:28 - title invalid
+2023-05-09 11:37:51 ERROR Task:28 - title invalid
+2023-05-09 11:37:51 ERROR Task:28 - title invalid
+2023-05-09 13:41:29 ERROR Task:36 - start date > date end
+2023-05-09 13:55:21 INFO  TasksOperations:20 - Fri Feb 03 00:00:00 EET 2023
+2023-05-09 13:55:21 INFO  TasksOperations:21 - Thu Feb 02 00:00:00 EET 2023
+2023-05-09 13:57:03 INFO  TasksOperations:20 - Wed Feb 01 00:00:00 EET 2023
+2023-05-09 13:57:03 INFO  TasksOperations:21 - Thu Feb 02 00:00:00 EET 2023
+2023-05-09 13:57:03 INFO  TasksOperations:20 - Wed May 10 00:00:00 EEST 2023
+2023-05-09 13:57:03 INFO  TasksOperations:21 - Mon May 15 00:00:00 EEST 2023
+2023-05-09 13:57:03 INFO  TasksOperations:20 - Tue May 10 00:00:00 EEST 2022
+2023-05-09 13:57:03 INFO  TasksOperations:21 - Mon Jun 20 00:00:00 EEST 2022
+2023-05-09 13:57:03 INFO  TasksOperations:31 - title
+2023-05-09 13:57:03 INFO  TasksOperations:20 - Tue May 10 00:00:00 EEST 2022
+2023-05-09 13:57:03 INFO  TasksOperations:21 - Fri Jun 10 00:00:00 EEST 2022
+2023-05-09 13:57:03 INFO  TasksOperations:31 - title
+2023-05-09 13:57:03 INFO  TasksOperations:20 - Fri Feb 03 00:00:00 EET 2023
+2023-05-09 13:57:03 INFO  TasksOperations:21 - Thu Feb 02 00:00:00 EET 2023
+2023-05-09 13:57:03 ERROR TasksOperations:23 - start date > date end
+2023-05-09 13:57:03 INFO  TasksOperations:20 - Sat Jan 01 00:00:00 EET 2022
+2023-05-09 13:57:03 INFO  TasksOperations:21 - Mon Jan 31 00:00:00 EET 2022
+2023-05-09 13:57:03 INFO  TasksOperations:31 - 
+2023-05-09 13:57:03 INFO  TasksOperations:31 - 
+2023-05-09 13:57:03 INFO  TasksOperations:20 - Sat Jan 01 00:00:00 EET 2022
+2023-05-09 13:57:03 INFO  TasksOperations:21 - Mon Jan 31 00:00:00 EET 2022
+2023-05-09 13:57:27 INFO  TasksOperations:20 - Fri Feb 03 00:00:00 EET 2023
+2023-05-09 13:57:27 INFO  TasksOperations:21 - Thu Feb 02 00:00:00 EET 2023
+2023-05-09 13:57:27 ERROR TasksOperations:23 - start date > date end
+2023-05-09 13:57:32 INFO  TasksOperations:20 - Wed Feb 01 00:00:00 EET 2023
+2023-05-09 13:57:32 INFO  TasksOperations:21 - Thu Feb 02 00:00:00 EET 2023
+2023-05-09 13:57:32 INFO  TasksOperations:20 - Wed May 10 00:00:00 EEST 2023
+2023-05-09 13:57:32 INFO  TasksOperations:21 - Mon May 15 00:00:00 EEST 2023
+2023-05-09 13:57:32 INFO  TasksOperations:20 - Tue May 10 00:00:00 EEST 2022
+2023-05-09 13:57:32 INFO  TasksOperations:21 - Mon Jun 20 00:00:00 EEST 2022
+2023-05-09 13:57:32 INFO  TasksOperations:31 - title
+2023-05-09 13:57:32 INFO  TasksOperations:20 - Tue May 10 00:00:00 EEST 2022
+2023-05-09 13:57:32 INFO  TasksOperations:21 - Fri Jun 10 00:00:00 EEST 2022
+2023-05-09 13:57:32 INFO  TasksOperations:31 - title
+2023-05-09 13:57:32 INFO  TasksOperations:20 - Fri Feb 03 00:00:00 EET 2023
+2023-05-09 13:57:32 INFO  TasksOperations:21 - Thu Feb 02 00:00:00 EET 2023
+2023-05-09 13:57:32 ERROR TasksOperations:23 - start date > date end
+2023-05-09 13:57:33 INFO  TasksOperations:20 - Sat Jan 01 00:00:00 EET 2022
+2023-05-09 13:57:33 INFO  TasksOperations:21 - Mon Jan 31 00:00:00 EET 2022
+2023-05-09 13:57:33 INFO  TasksOperations:31 - 
+2023-05-09 13:57:33 INFO  TasksOperations:31 - 
+2023-05-09 13:57:33 INFO  TasksOperations:20 - Sat Jan 01 00:00:00 EET 2022
+2023-05-09 13:57:33 INFO  TasksOperations:21 - Mon Jan 31 00:00:00 EET 2022
+2023-05-09 13:57:48 ERROR Task:28 - title invalid
+2023-05-09 13:57:48 ERROR Task:36 - start date > date end
+2023-05-09 13:57:48 ERROR Task:28 - title invalid
+2023-05-09 13:57:48 ERROR Task:40 - interval < than 0
+2023-05-09 13:57:48 ERROR Task:40 - interval < than 0
+2023-05-09 13:57:48 ERROR Task:28 - title invalid
+2023-05-09 13:57:48 ERROR Task:28 - title invalid
+2023-05-09 13:57:48 ERROR Task:28 - title invalid
+2023-05-09 13:57:48 ERROR Task:28 - title invalid
+2023-05-09 13:57:48 ERROR Task:28 - title invalid
+2023-05-09 13:57:56 INFO  TasksOperations:20 - Sat Jan 01 00:00:00 EET 2022
+2023-05-09 13:57:56 INFO  TasksOperations:21 - Mon Jan 31 00:00:00 EET 2022
+2023-05-09 13:57:56 INFO  TasksOperations:31 - 
+2023-05-09 13:57:56 INFO  TasksOperations:20 - Sat Jan 01 00:00:00 EET 2022
+2023-05-09 13:57:56 INFO  TasksOperations:21 - Mon Jan 31 00:00:00 EET 2022
+2023-05-09 13:57:56 INFO  TasksOperations:31 - 
+2023-05-09 13:57:56 INFO  TasksOperations:20 - Sat Jan 01 00:00:00 EET 2022
+2023-05-09 13:57:56 INFO  TasksOperations:21 - Mon Jan 31 00:00:00 EET 2022
+2023-05-09 13:57:56 INFO  TasksOperations:31 - title
