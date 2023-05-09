@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: tasks.model.ArrayTaskListTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.013 s <<< FAILURE! - in tasks.model.ArrayTaskListTest
+testGetTask  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.ArrayTaskListTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testGetAll  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.ArrayTaskListTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+

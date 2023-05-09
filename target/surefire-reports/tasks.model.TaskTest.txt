@@ -1,0 +1,55 @@
+-------------------------------------------------------------------------------
+Test set: tasks.model.TaskTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 17, Skipped: 0, Time elapsed: 0.019 s <<< FAILURE! - in tasks.model.TaskTest
+testEmptyTitle  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testGetDates  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testCorrectDates  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testCorrectTitle{String}[1]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testCorrectTitle{String}[2]  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testCorrectInterval  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testCorrectTimeInterval  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncorrectTimeInterval  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testLongTitle  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testGetTitleBooleans  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncorrectInterval{int}[1]  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncorrectInterval{int}[2]  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncorrectTitleInterval[1]  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncorrectTitleInterval[2]  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncorrectTitleInterval[3]  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncorrectTitleInterval[4]  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncorrectTitleInterval[5]  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TaskTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+

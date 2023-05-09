@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: tasks.model.TasksOperationsTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 7, Skipped: 0, Time elapsed: 0 s <<< FAILURE! - in tasks.model.TasksOperationsTest
+testIncoming01  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TasksOperationsTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncoming02  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TasksOperationsTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncoming03  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TasksOperationsTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncoming04  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TasksOperationsTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncomingInvalidDates  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TasksOperationsTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncomingValid  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TasksOperationsTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+
+testIncomingInvalid  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.model.TasksOperationsTest() accessible: module tasks does not "opens tasks.model" to unnamed module @9353778
+

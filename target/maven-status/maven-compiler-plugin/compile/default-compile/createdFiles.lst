@@ -8,8 +8,6 @@ tasks\services\DateService.class
 tasks\controller\Controller.class
 tasks\controller\TaskInfoController.class
 tasks\model\TaskList.class
-tasks\model\ArrayTaskList$1.class
-tasks\model\LinkedTaskList$1.class
 tasks\model\LinkedTaskList$LinkedTaskListIterator.class
 tasks\model\LinkedTaskList$Node.class
 tasks\model\ArrayTaskList$ArrayTaskListIterator.class

@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: tasks.services.TasksServiceTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 6, Skipped: 0, Time elapsed: 0.001 s <<< FAILURE! - in tasks.services.TasksServiceTest
+testFilterTasks  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.services.TasksServiceTest() accessible: module tasks does not "opens tasks.services" to unnamed module @9353778
+
+testFilterTasksRIntegration  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.services.TasksServiceTest() accessible: module tasks does not "opens tasks.services" to unnamed module @9353778
+
+testGetObservableListRIntegration  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.services.TasksServiceTest() accessible: module tasks does not "opens tasks.services" to unnamed module @9353778
+
+testFilterTasksERIntegration  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.services.TasksServiceTest() accessible: module tasks does not "opens tasks.services" to unnamed module @9353778
+
+testGetObservableListERIntegration  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.services.TasksServiceTest() accessible: module tasks does not "opens tasks.services" to unnamed module @9353778
+
+testGetObservableList  Time elapsed: 0 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make tasks.services.TasksServiceTest() accessible: module tasks does not "opens tasks.services" to unnamed module @9353778
+
